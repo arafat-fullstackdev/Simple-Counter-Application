@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter from './components/Counter';
-import '../src/index.css';
+import '../src/App.css';
+
 import ArryDestructure from './components/ArryDestructure';
 
 export default function App(){
@@ -12,9 +13,9 @@ export default function App(){
       </h1>
 
       <div className="max-w-md mx-auto mt-10 space-y-5">
-     <Counter/>
-     <ArryDestructure/>
+       <Counter/>
+       <ArryDestructure/>
       </div>
     </div>
-  )
+  );
 }

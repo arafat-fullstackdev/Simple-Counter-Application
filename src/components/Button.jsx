@@ -1,6 +1,7 @@
-export default function Button({ children, type, handler}) {
+// eslint-disable-next-line react/prop-types
+export default function Button({ children, type, handler }) {
     const style =
-    type === "danger"
+        type === "danger"
     ? "bg-red-500 text-white px-3 py-2 rounded shadow"
     : "bg-blue-500 text-white px-3 py-2 rounded shadow";
 
@@ -9,4 +10,6 @@ export default function Button({ children, type, handler}) {
             {children}
         </button>
     );
-}
+} 
+
+
