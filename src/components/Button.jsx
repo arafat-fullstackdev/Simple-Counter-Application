@@ -1,15 +1,15 @@
 // eslint-disable-next-line react/prop-types
+import { Button as ReactstrapButton } from "reactstrap";
+
 export default function Button({ children, type, handler }) {
-    const style =
-        type === "danger"
-    ? "bg-red-500 text-white px-3 py-2 rounded shadow"
-    : "bg-blue-500 text-white px-3 py-2 rounded shadow";
+    const color =
+        type === "danger" ? "danger" : "primary";
+  
 
     return(
-        <button className={style} onClick={handler}>
+        <ReactstrapButton color={color} onClick={handler}>
             {children}
-        </button>
+        </ReactstrapButton>
     );
 } 
-
 

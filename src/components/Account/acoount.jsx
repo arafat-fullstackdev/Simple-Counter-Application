@@ -1,39 +1,27 @@
-// define constant
-const INCREMENT = 'INCREMENT';
-const DECREMENT = 'DECREMENT';
+// state - count:0
+// action - increment, decrement, reset
+// reducer
+// store
 
-// State creator
-const increment = () => {
-    return {
-        type: INCREMENT
-    };
-};
+// CONSTANTS
 
-const decrement = () => {
-    return {
-        type: DECREMENT
-    };
-};
+const INCREMENT = "INCREMENT";
+const DECREMENT = "DECREMENT";
 
-// reducer -action
-
+// 1.state
 const initialState = {
- count: 0
+    count: 0,
 };
 
-const countReducer = (state= initialState, action) =>{
-    switch(action.type){
-        case INCREMENT:
-            return{
-                ...state,
-                count: state.count + 1
-            };
-        case DECREMENT:
-            return{
-                ...state,
-                count: state.count - 1
-            };
-        default:
-            return state;
-    }
+// 2. Action
+const incrementCounterAction = () => {
+    return{
+        type: INCREMENT,
+    };
+};
+
+const decrementCounterAction = () => {
+    return{
+        type: DECREMENT,
+    };
 };
