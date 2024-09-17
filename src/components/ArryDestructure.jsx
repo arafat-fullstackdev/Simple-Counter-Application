@@ -13,11 +13,13 @@ const ArryDestructure = props => {
     }
 
   return (
-    <div>
+    <div className='container-fluid  items-center'>
         <button onClick={changeState}>Show</button>
+        <div>
         <h3>{myName}</h3>
         <h4>{myInfo.id}</h4>
         <h4>{myInfo.address}</h4>
+        </div>
     </div>
   )
 }
