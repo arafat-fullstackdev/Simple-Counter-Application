@@ -1,5 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import Counter from './components/Counter';
+import CounterToDO from './components/TodoApp/Counter';
 import '../src/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,6 +18,7 @@ export default function App(){
 
        <Counter/>
        <ArryDestructure/>
+       {/* <CounterToDO/> */}
       </div>
     </div>
   );

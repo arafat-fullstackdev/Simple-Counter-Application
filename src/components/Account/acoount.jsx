@@ -44,3 +44,5 @@ const incrementValue = () => {
         type: INCREMENT_BY_VALUE,
     };
 };
+
+// 3 Reducers
